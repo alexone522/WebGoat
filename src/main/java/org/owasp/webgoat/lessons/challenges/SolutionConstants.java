@@ -27,5 +27,10 @@ import java.math.BigInteger;
 
 public class SolutionConstants {
 
-   String PASSWORD = "!!webgoat_admin_1234!!";
+     public static final String PASSWORD = generateSecurePassword();
+
+  private static String generateSecurePassword() {
+      SecureRandom random = new SecureRandom();
+      return new BigInteger(130, random).toString(32);
+  }
 }
