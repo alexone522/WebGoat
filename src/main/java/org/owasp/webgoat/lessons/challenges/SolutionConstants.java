@@ -27,8 +27,5 @@ import java.math.BigInteger;
 
 public class SolutionConstants {
 
-    public static final String PASSWORD = generateSecurePassword();
-
-    // TODO should be random generated when starting the server
-    String PASSWORD = "!!webgoat_admin_1234!!";
+   String PASSWORD = "!!webgoat_admin_1234!!";
 }
